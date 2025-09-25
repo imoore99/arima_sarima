@@ -1,27 +1,28 @@
 ## Time-Series Forecasting - Four Part Series
 
-#### Assessing the Nature and Behavior of Time-Series Data
+#### Assessing the Nature and Behavior of Time-Series Data by Model Comparison
 
 ##### PROJECT OVERVIEW:
 
-- Purpose: 
-- Objective: Compare five lambda values (1000, 4400, 6400, 14400, 129600) across three financial scenarios to demonstrate how parameter choice affects trend extraction, structural break identification, and confidence interval validity.
+- Purpose: Provide comprehensive guide to time series forecasting using ARIMA, SARIMA, and Holt-Winters methods, demonstrating practical applications across stationary and non-stationary financial data.
+- Objective: Compare forecasting model performance across different data characteristics, assess stationarity requirements, and develop practical framework for model selection with confidence interval validation.
 
 ##### DATA SOURCES:
 
-- Scenario 1: Monthly credit spread data (5 years, stationary with extreme events)
-- Scenario 2: META daily stock prices (2022-2023, structural break period)
-- Scenario 3: Loan portfolio growth data (6 years, exponential trending)
-- Analysis: 95% confidence intervals with breach rate validation
+- Stationary Data: Financial series with consistent statistical properties over time
+- Non-Stationary Data: Trending financial time series requiring differencing or transformation
+- Seasonal Patterns: Data exhibiting regular cyclical behavior
+- Validation: Out-of-sample testing with confidence interval assessment
 
 ##### TECHNOLOGIES USED:
 
 Core Stack:
 
 - Python - Primary analysis environment
-- statsmodels - HP filter implementation and time series analysis
+- statsmodels - ARIMA, SARIMA, Holt-Winters and statistical testing
+- sklearn - Linear Regression and R2 Scores
 - pandas/numpy - Data manipulation and numerical computing
-- matplotlib/seaborn - Trend visualization and confidence interval plotting
+- matplotlib/seaborn - Time series visualization and forecast plotting
 
 Development Tools:
 
@@ -48,4 +49,4 @@ Ian Moore - Quantitative finance professional
 
 📖 Medium: https://medium.com/@ian.moore_83986
 
-Educational project demonstrating how to assess the nature of time-series data and choose the correct model for prediction.
+Educational project demonstrating systematic approach to time series forecasting model selection and practical implementation.
